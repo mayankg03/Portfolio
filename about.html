@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      width: 100%;
+    }
+
+    /* Carousel */
+    .carousel-inner img {
+      width: 100%;
+      height: 90vh;
+    }
+
+    /* About Image */
+    .aboutimg {
+      transform: translateY(-50px);
+      scale: 140%;
+      padding-left: 80px;
+    }
+
+    /* Custom Styles */
+    .pg {
+      width: 500px;
+      /* Adjust as needed */
+      height: 300px;
+      /* Adjust as needed */
+    }
+
+    .tx h4 {
+      font-weight: 500;
+      /* Ensure consistent font weight */
+    }
+
+    /* Form Styles */
+    .form-group {
+      margin-bottom: 1rem;
+      /* Consistent spacing */
+    }
+
+    .form-control {
+      width: 100%;
+      /* Full width for inputs */
+    }
+
+    /* Footer */
+    footer {
+      padding: 1px;
+      background-color: #343a40;
+      /* Bootstrap dark background */
+      color: #343a40;
+      text-align: center;
+      height: 65px;
+      /* Update height to match inline style */
+    }
+
+    /* Additional Styles */
+    .text-center {
+      text-align: center;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .btn {
+      margin-top: 10px;
+      /* Consistent button spacing */
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo1.png" alt="XYZ" style="height: 50px; width: auto;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="jumbotron" style="padding-bottom:30px;">
+    <h1>HI!</h1>
+    <p>I'm a Passionate and Inspiring Developer.</p>
+  </div>
+  <section style="padding-right: 80px;" class="my-5">
+    <div class="py-5">
+      <h2 style="padding-left: 150px;" class="text-center">About Me</h2>
+    </div>
+    <div class="container-fluids">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <img src="j2.jpg" class="img-fluid aboutimg pg">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <h2 class="display-5">I am Mayank Garg</h2>
+          <p class="py-5">I have a strong focus on creating intuitive and efficient software
+            solutions to meet the needs of clients and end-users.
+            When I'm not coding, I love to stay up-to-date with the latest technology trends and
+            imporiving my skills.
+            I'm always eager to take new challenges and work with a team to deliver exceptional results.
+          </p>
+          <p>See my full resume</p>
+          <div>
+            <a href="My Resume.pdf" class="btn btn-primary">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="height: 65px;">
+    <img src="logo1.png" alt="XYZ Logo" style="max-height: 40px;">
+    <p style="color: white; height:-10px">© 2025 All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .pg {
+            width: 500px;
+            height: 300px;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        /* Additional styles from css/style.css */
+        .navbar {
+            width: 100%;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 90vh;
+        }
+
+        .aboutimg {
+            width: 100%;
+            height: 250px !important;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+            /* Consistent spacing */
+        }
+
+        .form-control {
+            width: 100%;
+            /* Full width for inputs */
+        }
+
+        footer {
+            padding: 1px;
+            background-color: #343a40;
+            /* Bootstrap dark background */
+            color: white;
+            text-align: center;
+            height: 5px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .btn {
+            margin-top: 10px;
+            /* Consistent button spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo1.png" alt="XYZ" style="height: 50px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <section class="my-5 ">
+        <div class="py-5">
+            <h2 class="text-center">Our Services</h2>
+        </div>
+        <div class="">
+            <div class="row">
+                <div class="col lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top pg" src="i1.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Landscape Photography</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Samples</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top pg" src="i4.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Street Photography</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Samples</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img class="card-img-top pg" src="i7.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Astro Photography</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Samples</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer style="height: 65px;">
+        <img src="logo1.png" alt="XYZ Logo" style="max-height: 40px;">
+        <p style="color: white; height:-10px">© 2025 All rights reserved.</p>
+        </p>
+    </footer>
+</body>
+
+</html>

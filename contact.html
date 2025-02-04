@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .s {
+            float: left;
+        }
+
+        /* Additional styles from css/style.css */
+        .navbar {
+            width: 100%;
+        }
+
+        footer {
+            padding: 1px;
+            background-color: #343a40;
+            /* Bootstrap dark background */
+            color: white;
+            text-align: center;
+            height: 5px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .btn {
+            margin-top: 10px;
+            /* Consistent button spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo1.png" alt="XYZ" style="height: 50px; width: auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <section class="my-5 ">
+        <div class="py-5">
+            <h2 class="text-left" style="padding-left:150px">Contact Us</h2>
+        </div>
+        <div style="margin: auto;height: 450px;width: 80%;">
+            <div class="w-50 m-auto s">
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="70b6a49a-29ba-41ed-abae-de4f4a2f1c41">
+                    <div class="form-group">
+                        <label for="">Username</label>
+                        <input type="text" name="user" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">E-mail Id</label>
+                        <input type="text" name="email" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mobile</label>
+                        <input type="text" name="mobile" autocomplete="off" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Comments</label>
+                        <textarea class="form-control" name="comments"></textarea>
+                    </div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+            <div>
+                <center>
+                    <p style="padding-top: 130px;"><button id="my"
+                            style="font-size:48px; background-color:transparent; border:none"><i class="material-icons"
+                                style="font-size:48px;color:black">mail</i></button>
+                        <button id="myB" style="background-color:transparent; border:none;"><i class="fa fa-instagram"
+                                style="padding-left:20px; font-size:48px;color:black;"></i></button><br>
+                        <button id="myBt" style="font-size:40px; background-color:transparent; border: none;"><i
+                                class="fa fa-linkedin p"></i></button>
+                        <button id="myBtn"
+                            style="padding-left:20px; font-size:40px; background-color:transparent; border: none;"><i
+                                class="fa fa-whatsapp" style="font-size:48px;color:black"></i></button>
+                    </p>
+                </center>
+            </div>
+        </div>
+    </section>
+    <footer style="height: 65px;">
+        <img src="logo1.png" alt="XYZ Logo" style="max-height: 40px;">
+        <p style="color: white; height:-10px">© 2025 All rights reserved.</p>
+        </p>
+    </footer>
+</body>
+<script>
+    var btn = document.getElementById('my');
+    btn.addEventListener('click', function () {
+        window.location.href = "https://mail.google.com/mail/u/0/#inbox";
+    });
+    var btn = document.getElementById('myB');
+    btn.addEventListener('click', function () {
+        window.location.href = "https://www.instagram.com/the_unexpected_artist/";
+    });
+    var btn = document.getElementById('myBt');
+    btn.addEventListener('click', function () {
+        window.location.href = "https://in.linkedin.com/?original_referer=";
+    });
+    var btn = document.getElementById('myBtn');
+    btn.addEventListener('click', function () {
+        window.location.href = "https://web.whatsapp.com/";
+    });
+</script>
+
+</html>

@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="profile-image-container">
           <div className="profile-glow"></div>
           <img 
-            src="/profile.png" 
+            src={process.env.PUBLIC_URL+"/profile.png"} 
             alt="Mayank Garg" 
             className="profile-image"
           />

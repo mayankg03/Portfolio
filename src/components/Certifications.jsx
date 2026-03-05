@@ -8,41 +8,41 @@ const Certifications = () => {
       title: 'SEO Certified',
       issuer: 'HubSpot Academy',
       date: 'March 2026',
-      image: '/seo-cert.png',
+      image: process.env.PUBLIC_URL +'/seo-cert.png',
       featured: true
     },
     {
       title: 'Business Analyst with Tableau',
       issuer: 'Dataquest / IoA',
       date: '2026',
-      image: '/busi-analyst-tab.jpg',
+      image: process.env.PUBLIC_URL +'/busi-analyst-tab.jpg',
       featured: true
     },
     {
       title: 'Data Visualization with Tableau',
       issuer: 'Codecademy',
-      image: '/dvbi.jpg',
+      image: process.env.PUBLIC_URL +'/dvbi.jpg',
       date: '2026',
       featured: true
     },
     {
       title: 'Reports in Power BI',
       issuer: 'DataCamp',
-      image: '/report-bi.jpg',
+      image: process.env.PUBLIC_URL +'/report-bi.jpg',
       date: 'March 2026',
       featured: true
     },
     {
       title: 'Ecommerce Analysis',
       issuer: 'DataCamp',
-      image: '/ecom-bi.png',
+      image: process.env.PUBLIC_URL +'/ecom-bi.png',
       date: 'March 2026',
       featured: true
     },
     {
       title: 'Deloitte Australia Data Analytics Job Simulation',
       issuer: 'Forage',
-      image: '/delo-data.jpg',
+      image: process.env.PUBLIC_URL +'/delo-data.jpg',
       date: '2025',
       featured: true
     },
@@ -55,14 +55,14 @@ const Certifications = () => {
     {
       title: 'Power BI',
       issuer: 'OfficeMasters',
-      image: '/power-bi.jpg',
+      image: process.env.PUBLIC_URL +'/power-bi.jpg',
       date: '2024',
       featured: true
     },
     {
       title: 'R Programming',
       issuer: 'Codecademy',
-      image: '/r-certi.jpg',
+      image: process.env.PUBLIC_URL +'/r-certi.jpg',
       date: '2024',
       featured: true
     },

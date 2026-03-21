@@ -1,0 +1,117 @@
+.experience {
+  animation-delay: 0.4s;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.experience-item {
+  padding: 32px;
+  display: flex;
+  gap: 24px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: slideInRight 0.8s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.experience-item:hover {
+  transform: translateX(10px);
+  border-color: rgba(255, 0, 0, 0.3);
+  box-shadow: 0 12px 40px rgba(255, 0, 0, 0.2);
+}
+
+.experience-icon-container {
+  flex-shrink: 0;
+}
+
+.experience-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: rgba(255, 0, 0, 0.2);
+  border: 2px solid rgba(255, 0, 0, 0.3);
+}
+
+.experience-icon.internship {
+  background: rgba(255, 0, 0, 0.15);
+}
+
+.experience-icon.leadership {
+  background: rgba(255, 100, 0, 0.15);
+  border-color: rgba(255, 100, 0, 0.3);
+}
+
+.experience-icon.achievement {
+  background: rgba(255, 200, 0, 0.15);
+  border-color: rgba(255, 200, 0, 0.3);
+}
+
+.experience-content {
+  flex: 1;
+}
+
+.experience-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.experience-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.organization {
+  color: #FF0000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.location {
+  color: #a0a0a0;
+  font-size: 16px;
+}
+
+.experience-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d0d0d0;
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .experience-title {
+    font-size: 20px;
+  }
+
+  .experience-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
